@@ -5,9 +5,6 @@ import Paragraph from "../components/paragraph"
 const Page = () => {
     return (
         <Container mt={10}>
-            <Box borderRadius="lg" backgroundColor={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                Hello I&apos;m fullstack developer.
-            </Box>
             <Box display={{ md: 'flex' }} textAlign={{ base: 'center', md: 'left' }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
