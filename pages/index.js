@@ -49,7 +49,7 @@ const Page = () => {
                     <BioYear>1996</BioYear> Born in Hetauda, Nepal
                 </BioSection>
                 <BioSection>
-                    <BioYear>2017</BioYear> Graduate from Hetauda City College
+                    <BioYear>2017</BioYear> Graduated BSC.CSIT from Hetauda City College
                 </BioSection>
                 <BioSection>
                     <BioYear>2018</BioYear> Worked At Alphatech
