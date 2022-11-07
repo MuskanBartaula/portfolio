@@ -1,6 +1,7 @@
 import { Box, Container, Heading, Image } from "@chakra-ui/react"
 import Section from "../components/section"
 import Paragraph from "../components/paragraph"
+import { BioSection, BioYear } from "../components/bio"
 
 const Page = () => {
     return (
@@ -40,7 +41,27 @@ const Page = () => {
                     to take your business to the next level with new advanced technologies.
                 </Paragraph>
             </Section>
-        </Container>
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>1996</BioYear> Born in Hetauda, Nepal
+                </BioSection>
+                <BioSection>
+                    <BioYear>2017</BioYear> Graduate from Hetauda City College
+                </BioSection>
+                <BioSection>
+                    <BioYear>2018</BioYear> Worked At Alphatech.PVT.LTD
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021</BioYear> Worked as Freelancer
+                </BioSection >
+                <BioSection>
+                    <BioYear>2021-Present</BioYear> Elintegro Inc
+                </BioSection>
+            </Section >
+        </Container >
     )
 }
 
