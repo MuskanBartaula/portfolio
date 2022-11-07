@@ -55,7 +55,7 @@ const Page = () => {
                     <BioYear>2018</BioYear> Worked At Alphatech.PVT.LTD
                 </BioSection>
                 <BioSection>
-                    <BioYear>2021</BioYear> Worked as Freelancer
+                    <BioYear>2019</BioYear> Worked as Freelancer
                 </BioSection >
                 <BioSection>
                     <BioYear>2021-Present</BioYear> Elintegro Inc
