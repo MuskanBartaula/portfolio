@@ -52,7 +52,7 @@ const Page = () => {
                     <BioYear>2017</BioYear> Graduate from Hetauda City College
                 </BioSection>
                 <BioSection>
-                    <BioYear>2018</BioYear> Worked At Alphatech.PVT.LTD
+                    <BioYear>2018</BioYear> Worked At Alphatech
                 </BioSection>
                 <BioSection>
                     <BioYear>2019</BioYear> Worked as Freelancer
