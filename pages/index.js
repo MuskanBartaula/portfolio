@@ -5,7 +5,7 @@ import { BioSection, BioYear } from "../components/bio"
 
 const Page = () => {
     return (
-        <Container mt={10}>
+        <Container mt={10} maxW={700}>
             <Box display={{ md: 'flex' }} textAlign={{ base: 'center', md: 'left' }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
@@ -58,7 +58,7 @@ const Page = () => {
                     <BioYear>2019</BioYear> Worked as Freelancer
                 </BioSection >
                 <BioSection>
-                    <BioYear>2021-Present</BioYear> Elintegro Inc
+                    <BioYear>Now</BioYear> Elintegro Inc
                 </BioSection>
             </Section >
         </Container >

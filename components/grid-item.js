@@ -25,6 +25,7 @@ export const GridItemStyle = () => (
   <Global styles={`
     .grid-item-thumbail: {
       border-radius: 12px;
+      height: 900px;
     }
   `} />
 )
