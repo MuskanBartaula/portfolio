@@ -1,7 +1,12 @@
-import { Box, Container, Heading, Image } from "@chakra-ui/react"
+import { Box, Button, Container, Heading, Icon, Image, Link, List, ListItem } from "@chakra-ui/react"
 import Section from "../components/section"
 import Paragraph from "../components/paragraph"
 import { BioSection, BioYear } from "../components/bio"
+import {
+    IoLogoGithub,
+    IoLogoDiscord,
+    IoLogoFacebook
+} from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -61,6 +66,33 @@ const Page = () => {
                     <BioYear>Now</BioYear> Elintegro Inc
                 </BioSection>
             </Section >
+
+            <Section delay={0.3}>
+                <Heading as="h3" variant="section-title">Web Links</Heading>
+                <List>
+                    <ListItem>
+                        <Link href="https://github.com/MuskanBartaula" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
+                                Github
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://discord.com/users/MuskanBartaula#1049" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoDiscord} />}>
+                                Discord
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://www.facebook.com/MuskanMTD" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoFacebook} />}>
+                                Facebook
+                            </Button>
+                        </Link>
+                    </ListItem>
+                </List>
+            </Section>
         </Container >
     )
 }
