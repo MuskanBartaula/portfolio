@@ -4,8 +4,7 @@ import Paragraph from "../components/paragraph"
 import { BioSection, BioYear } from "../components/bio"
 import {
     IoLogoGithub,
-    IoLogoDiscord,
-    IoLogoFacebook
+    IoLogoDiscord
 } from 'react-icons/io5'
 
 const Page = () => {
@@ -81,13 +80,6 @@ const Page = () => {
                         <Link href="https://discord.com/users/MuskanBartaula#1049" target="_blank">
                             <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoDiscord} />}>
                                 Discord
-                            </Button>
-                        </Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link href="https://www.facebook.com/MuskanMTD" target="_blank">
-                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoFacebook} />}>
-                                Facebook
                             </Button>
                         </Link>
                     </ListItem>
