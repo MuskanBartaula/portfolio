@@ -13,7 +13,8 @@ import {
     MenuList,
     MenuButton,
     IconButton,
-    useColorModeValue
+    useColorModeValue,
+    Button
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
@@ -67,6 +68,9 @@ const Navbar = props => {
                     <LintkItem href="/posts" path={path}>Posts</LintkItem>
                 </Stack>
                 <Box flex={1} align="right">
+                    <Box mr={10} display={{ base: 'inline-block' }}>
+                        <Link href="/docs/muskan_cv.pdf" download>Download Resume </Link>
+                    </Box>
                     <ThemeToggleButton />
                     <Box
                         ml={2}

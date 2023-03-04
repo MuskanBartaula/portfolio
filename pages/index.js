@@ -22,8 +22,8 @@ const Page = () => {
                         borderColor="whiteAlpha.800"
                         borderWidth={3}
                         borderStyle="solid"
-                        maxWidth="150px"
-                        maxHeight="150px"
+                        maxWidth="250px"
+                        maxHeight="250px"
                         display="inline-block"
                         borderRadius="full"
                         src="/images/muskan.jpg"
