@@ -6,8 +6,16 @@ import {
     IoLogoGithub,
     IoLogoDiscord
 } from 'react-icons/io5'
+import Modal from 'react-modal'
+import { useState } from "react"
 
 const Page = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    const showProfile = () => {
+        setIsModalOpen(true)
+    }
+
     return (
         <Container mt={10} maxW={700}>
             <Box display={{ md: 'flex' }} textAlign={{ base: 'center', md: 'left' }}>
@@ -30,6 +38,8 @@ const Page = () => {
                         width="200px"
                         height="200px"
                         alt="Profile Image"
+                        style={{ cursor: 'pointer' }}
+                        onClick={showProfile}
                     />
                 </Box>
             </Box>
@@ -85,6 +95,42 @@ const Page = () => {
                     </ListItem>
                 </List>
             </Section>
+            <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
+                style={{
+                    overlay: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                        zIndex: 1000
+                    },
+                    content: {
+                        border: 'none',
+                        borderRadius: '4px',
+                        bottom: 'auto',
+                        left: '50%',
+                        marginRight: '-50%',
+                        padding: 0,
+                        position: 'fixed',
+                        right: 'auto',
+                        top: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        maxWidth: '90%',
+                        maxHeight: '90%',
+                    }
+                }}
+            >
+                <Image
+                    borderColor="whiteAlpha.800"
+                    borderWidth={7}
+                    borderStyle="solid"
+                    maxWidth="500px"
+                    maxHeight="500px"
+                    display="inline-block"
+                    src="/images/muskan.jpg"
+                    width="420px"
+                    height="420px"
+                    alt="Profile Image"
+                    onClick={showProfile}
+                />
+            </Modal>
         </Container >
     )
 }
