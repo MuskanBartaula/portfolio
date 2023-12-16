@@ -11,15 +11,17 @@ const PostPage = () => {
         Posts
       </Heading>
       <SimpleGrid columns={[1, 1, 3]} gap={6}>
+        
         <Section>
           <WorkGridItem 
             id="nodeInstallation" 
             thumbnail={nodeInstallation}
             category='posts'
           >
-            How to install Node in linux using the tar file
+            How to install NodeJS in linux using the tar file
           </WorkGridItem>
         </Section>
+        
       </SimpleGrid>
     </Container>
   )
