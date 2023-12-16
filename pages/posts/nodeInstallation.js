@@ -25,24 +25,22 @@ const Post = () => {
         <Text fontSize={16} mb={2}>
           <strong>Step 3:</strong> Extract the tar file
         </Text>
-        <CopyCommandButton command='sudo tar -xvf node-v21.x.x-linux-x64.tar.xz' />
+        <CopyCommandButton command='sudo tar -xvf node-v20.10.0-linux-x64.tar.xz' />
 
         <Text fontSize={16} mb={2}>
           <strong>Step 4:</strong> Copy the extracted files to /usr/
         </Text>
-        <CopyCommandButton command='sudo cp -r node-v21.x.x-linux-x64/\{bin,include,lib,share\} /usr/' />
+        <CopyCommandButton command='sudo cp -r node-v20.10.0-linux-x64/\{bin,include,lib,share\} /usr/' />
 
         <Text fontSize={16} mb={2}>
           <strong>Step 5:</strong> Export the path
         </Text>
-        <CopyCommandButton command='export PATH=/usr/node-v21.x.x-linux-x64/bin:$PATH' />
+        <CopyCommandButton command='export PATH=/usr/node-v20.10.0-linux-x64/bin:$PATH' />
 
-        <Text fontSize={18} mt={6}>
-          {`Let's check the node version by running the command`}
-          <Code fontSize={14} mb={2} colorScheme="cyan" ml={2}>
-            node -v
-          </Code>
+        <Text fontSize={18} mb={2}>
+          <strong>Step 6:</strong> {`Let's check the node version by running the command`}
         </Text>
+        <CopyCommandButton command='node -v' />
 
         <Text fontSize={18} mt={6}>
           Congratulations! You have successfully installed Node.js on your Linux system.
