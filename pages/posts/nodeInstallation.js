@@ -43,7 +43,7 @@ const Post = () => {
         <Text fontSize={16} mb={2}>
           <strong>Step 4:</strong> Copy the extracted files to /usr/
         </Text>
-        {renderCommandWithCopyButton("sudo cp -r node-v21.x.x-linux-x64/{\{bin,include,lib,share\}} /usr/")}
+        {renderCommandWithCopyButton("sudo cp -r node-v21.x.x-linux-x64/\{bin,include,lib,share\} /usr/")}
 
         <Text fontSize={16} mb={2}>
           <strong>Step 5:</strong> Export the path
@@ -51,7 +51,7 @@ const Post = () => {
         {renderCommandWithCopyButton('export PATH=/usr/node-v21.x.x-linux-x64/bin:$PATH')}
 
         <Text fontSize={18} mt={6}>
-          Let's check the node version by running the command 
+          {`Let's check the node version by running the command`}
           <Code fontSize={14} mb={2} colorScheme="cyan" ml={2}>
             node -v
           </Code>
