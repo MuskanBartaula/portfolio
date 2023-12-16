@@ -43,7 +43,7 @@ const Post = () => {
         <Text fontSize={16} mb={2}>
           <strong>Step 4:</strong> Copy the extracted files to /usr/
         </Text>
-        {renderCommandWithCopyButton("sudo cp -r directory_name/{'{bin,include,lib,share}'} /usr/")}
+        {renderCommandWithCopyButton("sudo cp -r directory_name/{\{bin,include,lib,share\}} /usr/")}
 
         <Text fontSize={16} mb={2}>
           <strong>Step 5:</strong> Export the path
@@ -56,7 +56,7 @@ const Post = () => {
             node -v
           </Code>
         </Text>
-        
+
         <Text fontSize={18} mt={6}>
           Congratulations! You have successfully installed Node.js on your Linux system.
         </Text>
